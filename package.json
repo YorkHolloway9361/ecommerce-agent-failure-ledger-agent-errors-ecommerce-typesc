@@ -1,0 +1,23 @@
+{
+  "name": "ecommerce-agent-failure-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/order_agent_service.ts",
+    "example": "tsx src/example_checkout.ts",
+    "test": "tsx --test test/order_workflow.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  }
+}
